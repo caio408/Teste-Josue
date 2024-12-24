@@ -1,0 +1,31 @@
+<div id="<%= dom_id package %>">
+  <p>
+    <strong>Package name:</strong>
+    <%= package.package_name %>
+  </p>
+
+  <p>
+    <strong>Package value:</strong>
+    <%= package.package_value %>
+  </p>
+
+  <p>O valor do pacote é: <%= package.calculate_value %></p>
+
+   <p>
+    <strong>Associated Plan:</strong>
+    <%= package.plan ? package.plan.plan_name : "No Plan" %>
+  </p>
+
+  <p>
+    <strong>Plan Value:</strong>
+    <%= package.plan ? package.plan.plan_value : "No Plan" %>
+  </p>
+
+  <p>
+  <strong>Additional Service:</strong>
+  <%= package.additional_service ? package.additional_service.service_name : "No additional Service" %>
+  <p>
+
+
+
+</div>

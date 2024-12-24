@@ -1,0 +1,19 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Packages" %>
+
+<h1>Packages</h1>
+<br>
+<%= link_to "Back", welcome_index_path%>
+
+<div id="packages">
+  <% @packages.each do |package| %>
+    <%= render package %>
+    <p>
+      <%= link_to "Show this package", package %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New package", new_package_path %>
+

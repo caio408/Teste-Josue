@@ -1,0 +1,39 @@
+<%= form_with(model: package) do |form| %>
+  <% if package.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(package.errors.count, "error") %> prohibited this package from being saved:</h2>
+
+      <ul>
+        <% package.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :package_name, style: "display: block" %>
+    <%= form.text_field :package_name %>
+  </div>
+
+  <div>
+    <%= form.label :plan_name, style: "display: block" %>
+   <%= form.collection_select :plans_id, Plan.all, :id, :plan_name, prompt: "Select a one plan" %>
+  </div>
+
+  <div>
+  <%= form.label :service_name, style: "display: block" %>
+  <%= form.collection_select :additional_services_id, AdditionalService.all, :id, :service_name, prompt: "Select a service (optional)" %>
+</div>
+
+  <div>
+    <%= form.label :package_value, style: "display: block" %>
+    <%= form.text_field :package_value %>
+  </div>
+
+ 
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
