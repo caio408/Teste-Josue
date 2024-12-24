@@ -1,25 +1,21 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Bem vindos ao meu sistema de assinaturas, BlueSkyTv
+
+BlueSkyTv é um sistema de assinatura, onde voce pode cadastrar clientes, planos, pacotes, e serviços adicionais também
+É somente permitido o cadastro de maiores de idade!
+
+para rodar nosso sistema são necessarias algumas pequenas configurações
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version 3.3.8
 
-* System dependencies
+* Rails version 8.0.1
 
-* Configuration
+* Para mais informações sobre o versionamento de gems, consulte a gemfile
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
 
 * ...
 # blueskytv
